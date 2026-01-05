@@ -1025,7 +1025,48 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
+ case-study {
+  margin-top: 40px;
+}
 
+.case-item {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.case-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  color: var(--white-2);
+}
+
+.case-content {
+  margin-top: 10px;
+  color: var(--light-gray);
+  line-height: 1.6;
+}
+
+.case-content ul {
+  list-style: none;       /* matikan bullet default */
+  padding-left: 0;
+}
+
+.case-content li {
+  position: relative;
+  padding-left: 1.2rem;  /* jarak teks dari bullet */
+  margin-bottom: 6px;
+}
+
+.case-content li::before {
+  content: "•";          /* simbol bullet */
+  position: absolute;
+  left: 0;
+  color: var(--orange-yellow-crayola); /* optional */
+  font-weight: bold;
+}
 
 
 
